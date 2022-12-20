@@ -1,0 +1,16 @@
+.descriptionList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.descriptionList__item {
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 12px;
+}
+.descriptionList__item:hover {
+  box-shadow: 0.1px 0.1px 10px 0.1px #eb9008;
+  cursor: pointer;
+}

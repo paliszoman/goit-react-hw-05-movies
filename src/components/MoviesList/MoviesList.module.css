@@ -1,0 +1,20 @@
+.moviesList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.link {
+  text-decoration: inherit;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+.link:hover {
+  font-weight: bold;
+  border: 1px solid #3f51b5;
+  padding: 10px 5px;
+  border-radius: 12px;
+  color: #3f51b5;
+}

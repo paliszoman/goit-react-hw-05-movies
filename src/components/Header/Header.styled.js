@@ -17,9 +17,10 @@ export const Header = styled.header`
 export const Link = styled(NavLink)`
   font-size: 24px;
   text-decoration: none;
+  color: black;
+  font-weight: bold;
 
   &.active {
-    color: red;
-    background-color: #12ca21;
+    color: orangered;
   }
 `;
