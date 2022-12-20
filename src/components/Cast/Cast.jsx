@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { useCast } from '../../utils/hooks/useCast';
 import { Loader } from '../Loader/Loader';
 
-export const Cast = () => {
+const Cast = () => {
   const { id } = useParams();
   const { cast } = useCast(id);
 
@@ -35,6 +35,8 @@ export const Cast = () => {
     </div>
   );
 };
+
+export default Cast;
 
 Cast.propTypes = {
   id: PropTypes.string,

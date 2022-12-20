@@ -6,7 +6,7 @@ import { useDetails } from '../../utils/hooks/useDetails';
 import { Loader } from '../../components/Loader/Loader';
 import { Suspense } from 'react';
 import { MovieDetailsGenerator } from '../../components/MovieDetailsGenerator/MovieDetailsGenerator';
-export const MovieDetails = () => {
+const MovieDetails = () => {
   const { id } = useParams();
   const { movie } = useDetails(id);
   const location = useLocation();
@@ -38,6 +38,7 @@ export const MovieDetails = () => {
     </main>
   );
 };
+export default MovieDetails;
 
 MovieDetails.propTypes = {
   id: PropTypes.number,

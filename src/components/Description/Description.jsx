@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { useReviews } from '../../utils/hooks/useReviews';
 import { Loader } from '../Loader/Loader';
 
-export const Description = () => {
+const Description = () => {
   const { id } = useParams();
   const { review } = useReviews(id);
 
@@ -26,6 +26,7 @@ export const Description = () => {
     </div>
   );
 };
+export default Description;
 Description.propTypes = {
   id: PropTypes.string,
   review: PropTypes.arrayOf(PropTypes.object),

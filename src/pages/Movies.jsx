@@ -8,7 +8,7 @@ import { Loader } from '../components/Loader/Loader';
 
 const MoviesList = lazy(() => import('../components/MoviesList/MoviesList'));
 
-export const Movies = () => {
+const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query') ?? '';
   const { movies } = useSearchMovie(query);
@@ -29,7 +29,7 @@ export const Movies = () => {
     </main>
   );
 };
-
+export default Movies;
 Movies.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object),
   query: PropTypes.string,

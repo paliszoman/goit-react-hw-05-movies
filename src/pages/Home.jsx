@@ -4,7 +4,7 @@ import MoviesList from '../components/MoviesList/MoviesList';
 import { useTrending } from '../utils/hooks/useTrending';
 import { Loader } from '../components/Loader/Loader';
 
-export const HomePage = () => {
+const HomePage = () => {
   const { trendingArray } = useTrending();
 
   return !trendingArray ? (
@@ -15,6 +15,7 @@ export const HomePage = () => {
     </main>
   );
 };
+export default HomePage;
 
 HomePage.propTypes = {
   trendingArray: PropTypes.arrayOf(PropTypes.object),
